@@ -32,11 +32,13 @@
             justify-content: center;
             text-align: center;
             filter: drop-shadow(6px 6px 6px #00000055);
+            animation: rotating infinite 3s alternate ease-in-out;
         }
         .logo img {
             width: 200px;
             height: auto;
             margin: 10px;
+            animation: scaling infinite 3s alternate ease-in-out;
         }
         .logo span {
             line-height: 22px;
@@ -45,6 +47,16 @@
         @keyframes gradient {
             0% { background-position: 0% 0%}
             100% { background-position: 100% 100%}
+        }
+        
+        @keyframes scaling {
+            0% { transform: scale(100%) }
+            100% { transform: scale(103%) }
+        }
+        @keyframes rotating {
+            0% { transform: rotate(-1deg) }
+            50% { transform: rotate(1deg) }
+            100% { transform: rotate(-1deg) }
         }
         .links-container {
             margin-top: 20px;
@@ -84,10 +96,10 @@
         <span>LUXURY</span>
     </div>
     <div class="links-container">
-        <a href="#">ВКОНТАКТЕ</a>
-        <a href="#">INSTAGRAM</a>
-        <a href="#">ОТЗЫВЫ</a>
-        <a href="#">ОНЛАЙН ЗАПИСЬ</a>
+        <a href="https://vk.com/lenchik_ch">ВКОНТАКТЕ</a>
+        <a href="https://www.instagram.com/leno4ka_48__">INSTAGRAM</a>
+        <a href="https://www.avito.ru/murom/predlozheniya_uslug/massazh_3703217662">ОТЗЫВЫ</a>
+        <a href="https://dikidi.net/1432198">ОНЛАЙН ЗАПИСЬ</a>
     </div>
 </body>
 </html>
